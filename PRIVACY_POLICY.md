@@ -1,6 +1,6 @@
 # Privacy Policy for SweepIt
 
-**Last Updated: November 16, 2025**
+**Last Updated: December 7, 2025**
 
 ## Overview
 SweepIt ("the App") is a photo gallery management application developed by LoraApps. This Privacy Policy explains how we handle your information.
@@ -31,7 +31,6 @@ The App requires the following permissions to function:
 - **No Cloud Backup**: We do not back up your photos or app data to cloud services
 - **No Analytics**: We do not use analytics or tracking services
 - **No Third-Party Services**: The App does not integrate with any third-party services that collect data
-- **Banner Messages**: The app downloads a small configuration file from GitHub Pages to display seasonal messages. This file contains no user data and no tracking occurs
 
 ## Data Deletion
 When you delete photos using SweepIt:
@@ -53,11 +52,11 @@ We may update this Privacy Policy from time to time. Changes will be posted on t
 ## Contact
 For questions about this Privacy Policy, contact:
 - **Developer**: LoraApps
-- **Email**: loralabs.bilisim@gmail.com
-- **Location**: Istanbul, Turkey
+- **Email**: bilge@lorabilisim.com
+- **Location**: Igdir, Türkiye
 
 ## Your Rights
-Since we do not collect any data:1425
+Since we do not collect any data:
 - There is no data to access, modify, or delete from our servers
 - All your data remains under your control on your device
 - You can uninstall the app at any time to remove all app-related data
