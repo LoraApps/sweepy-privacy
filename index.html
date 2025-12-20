@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="SweepIt Gizlilik Politikası - Fotoğraf ve Video Temizleme Uygulaması" />
+    <title>SweepIt - Gizlilik Politikası</title>
+    <style>
+        :root{--bg:#0f1724;--card:#0b1320;--muted:#9aa4b2;--accent:#ff9800;--accent-strong:#ffb74d;--success:#4caf50}
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef7;background:linear-gradient(180deg,#071020 0%,#0b1220 100%);-webkit-font-smoothing:antialiased}
+        .wrap{max-width:960px;margin:28px auto;padding:20px}
+        .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:28px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+        header{display:flex;gap:16px;align-items:center}
+        .logo{width:64px;height:64px;border-radius:12px;display:inline-block;background:linear-gradient(135deg,var(--accent),#1565c0);color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px}
+        h1{font-size:22px;margin:0;color:#fff}
+        .subtitle{margin:0;color:var(--muted);font-size:13px}
+        .meta{margin-top:14px;padding:12px;border-radius:10px;background:rgba(255,152,0,0.06);border-left:4px solid var(--accent);color:var(--accent-strong);font-weight:600}
+        h2{color:#fff;margin-top:22px;margin-bottom:10px;font-size:18px}
+        p{color:var(--muted);line-height:1.6;margin:0 0 12px}
+        ul{color:var(--muted);margin:0 0 16px 18px}
+        .section{margin-top:18px}
+        .box{background:rgba(255,255,255,0.02);padding:14px;border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
+        .third-party{display:flex;flex-wrap:wrap;gap:10px}
+        .badge{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+        .contact{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;margin-top:14px}
+        footer{margin-top:26px;color:rgba(255,255,255,0.4);font-size:13px;text-align:center}
+        @media (max-width:640px){.wrap{padding:12px}.card{padding:18px}h1{font-size:20px}}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="card">
+            <header>
+                <div class="logo">SI</div>
+                <div>
+                    <h1>SweepIt — Gizlilik Politikası</h1>
+                    <div class="subtitle">Güncel uygulama davranışı ve veri işleme açıklamaları</div>
+                </div>
+            </header>
+
+            <div class="meta">Güncellendi: 21 Aralık 2025</div>
+
+            <section class="section">
+                <h2>Genel Bakış</h2>
+                <p>SweepIt (bundan sonra “Uygulama”) cihazınızda çalışan bir galeri temizleme ve fotoğraf/video yönetimi aracıdır. Bu politika, uygulamanın hangi izinleri kullandığını, hangi verilerin işlendiğini, üçüncü taraf hizmetleri ve kullanıcı haklarını açıklar.</p>
+            </section>
+
+            <section class="section">
+                <h2>Toplanan Veriler ve Amaçları</h2>
+                <div class="box">
+                    <p><strong>Uygulama genel olarak kişisel içeriklerinizi sunucuya göndermez.</strong> Ancak aşağıdaki veri türleri uygulama ve üçüncü taraf hizmetler tarafından işlenebilir:</p>
+                    <ul>
+                        <li><strong>Medya Erişimi:</strong> Fotoğraf ve videolarınıza erişmek (görüntüleme, sıkıştırma, silme, gizli kasa). Medya dosyaları cihazınızda kalır; içerikleri sunuculara yüklemiyoruz.</li>
+                        <li><strong>Uygulama Ayarları ve Sayaçlar (Yerel):</strong> Hive (yerel veritabanı) içinde günlük sayaçlar, tercihler ve küçük önbellek verileri tutulur.</li>
+                        <li><strong>Analitik & Hata Bildirimi:</strong> Uygulama Firebase Analytics veya benzeri araçlarla kullanım verileri ve çökme raporları toplayabilir. Bu veriler performans ve hata takibi içindir ve kişisel içerik içermez.</li>
+                        <li><strong>Reklam Kimlikleri:</strong> Reklamların çalışması için cihazın reklam kimliği (Advertising ID) ve bağlamsal sinyaller kullanılabilir; bu, Google Mobile Ads tarafından işlenir.</li>
+                        <li><strong>Ödeme / Abonelik Verileri:</strong> Satın alma işlemleri RevenueCat (purchases_flutter) aracılığıyla yürütülür. Ödeme veya abonelik durumunuz gibi bilgiler RevenueCat tarafından işlenir; bu bilgiler uygulama sunucumuza aktarılmaz.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>İzinler ve Kullanım Şekli</h2>
+                <p>Uygulama aşağıdaki Android izinlerini talep edebilir. Her izin yalnızca ilgili özellik etkin olduğunda kullanılır:</p>
+                <ul>
+                    <li><strong>READ_MEDIA_IMAGES / READ_MEDIA_VIDEO:</strong> Galerinizdeki medyayı görüntülemek ve işlem yapmak için gerekli.</li>
+                    <li><strong>WRITE_EXTERNAL_STORAGE (eski API'ler):</strong> Dosya silme veya yazma gereken işlevler için kullanılır (Android 9 ve öncesi).</li>
+                    <li><strong>INTERNET:</strong> Reklam gösterimi, paket/ayar kontrolleri ve ödeme servisleri için gereklidir.</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Üçüncü Taraf Hizmetleri</h2>
+                <p>Uygulamanın bazı özellikleri üçüncü taraf SDK ve servisleri kullanır. Bu servisler kendi gizlilik politikalarına tabidir:</p>
+                <div class="third-party">
+                    <div class="badge">Google Mobile Ads (AdMob)</div>
+                    <div class="badge">RevenueCat (purchases_flutter)</div>
+                    <div class="badge">Firebase (Analytics / Crashlytics)</div>
+                    <div class="badge">Hive (yerel veri)</div>
+                    <div class="badge">photo_manager (galeri erişimi)</div>
+                </div>
+                <p style="margin-top:12px">Bu hizmetler kişisel veri veya reklam kimliği gibi bilgileri toplayabilir. Örneğin reklam sağlayıcıları hedefleme için cihaz reklam kimliğini kullanabilir. Kişisel veri toplanması ve kullanımı için ilgili sağlayıcının gizlilik politikasına başvurabilirsiniz.</p>
+            </section>
+
+            <section class="section">
+                <h2>Reklamlar ve Kişiselleştirme</h2>
+                <p>Uygulama reklam gösterir. Reklam sağlayıcıları (ör. Google) cihaz kimliği, konum (eğer izin verilmişse) ve uygulama kullanımı gibi bilgilerle reklamları kişiselleştirebilir. Reklam tercihlerini Android reklam ayarlarından veya cihaz üreticinizin ilgili ayarlarından yönetebilirsiniz.</p>
+            </section>
+
+            <section class="section">
+                <h2>Satın Alma ve Abonelikler</h2>
+                <p>Uygulama içi satın almalar RevenueCat platformu aracılığıyla işlenir. Satın alma işlemi sırasında ödeme bilgileri doğrudan mağaza (Google Play / App Store) tarafından işlenir; uygulama veya RevenueCat tarafından tam ödeme bilgileri kullanılmaz. Satın alma / abonelik durumunuz RevenueCat tarafından saklanır ve uygulanır.</p>
+            </section>
+
+            <section class="section">
+                <h2>Yerel Depolama ve Önbellek</h2>
+                <p>Uygulama küçük boyutlu verileri cihazda saklar (Hive): tercihler, günlük sayaçlar, küçük önbellek ve uygulama durum bilgileri. Bu veriler cihazınızdan silinmeden uygulamayı kaldırdığınızda genellikle temizlenir.</p>
+            </section>
+
+            <section class="section">
+                <h2>Veri Saklama ve Silme</h2>
+                <ul>
+                    <li>Uygulama, medyanızın kopyalarını sunucuda saklamaz.</li>
+                    <li>Uygulama içinden sildiğiniz dosyalar cihazdan silinir; Android’in çöp kutusu/geri dönüşüm davranışı farklılık gösterebilir.</li>
+                    <li>Yerel verilerin (ayarlar, sayaçlar) silinmesini isterseniz uygulamayı kaldırabilirsiniz; bazı durumlarda uygulama verilerini elle temizlemeniz gerekebilir (cihaz ayarları → Uygulamalar).</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Kullanıcı Hakları</h2>
+                <p>Çoğu veri uygulama içinde yerel olarak tutulduğundan merkezi bir sunucudan veri talep etme ihtiyacı yoktur. Reklam ve analiz sağlayıcılarının topladığı verilerle ilgili olarak ilgili üçüncü tarafların politika ve kontrolleri üzerinden (ör. Google Rehberi) reklam tercihleriniz ve veri silme taleplerinizi yönetebilirsiniz.</p>
+            </section>
+
+            <section class="section">
+                <h2>Çocukların Gizliliği</h2>
+                <p>Uygulama 13 yaşından küçük çocuklardan bilerek kişisel veri toplamaz. Eğer bir ebeveyn olarak çocuğunuzun verilerinin toplandığını düşünüyorsanız iletişime geçiniz.</p>
+            </section>
+
+            <section class="section">
+                <h2>Güvenlik</h2>
+                <p>Uygulama yerel veri için makul güvenlik önlemleri uygular (ör. uygulama içi gizli kasa şifreleme). Ancak internet üzerinden veri gönderimi söz konusu olduğunda (ödeme doğrulama, reklam) üçüncü taraf sağlayıcıların güvenlik uygulamaları devreye girer.</p>
+            </section>
+
+            <section class="section">
+                <h2>İletişim</h2>
+                <div class="contact">
+                    <p>Eğer bu gizlilik politikasıyla ilgili sorunuz, endişeniz veya veri silme talebiniz varsa lütfen bizimle iletişime geçin:</p>
+                    <p><strong>Email:</strong> bilge@lorabilisim.com</p>
+                    <p><strong>Şirket:</strong> LoraApps — Istanbul, Türkiye</p>
+                </div>
+            </section>
+
+            <footer>
+                <div>© LoraApps — SweepIt • Tüm hakları saklıdır • Son güncelleme: 21 Aralık 2025</div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
