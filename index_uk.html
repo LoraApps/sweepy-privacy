@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Політика конфіденційності Sweepy — застосунок для очищення фото та відео" />
+    <title>Sweepy — Політика конфіденційності</title>
+    <style>
+        :root{--bg:#0f1724;--card:#0b1320;--muted:#9aa4b2;--accent:#ff9800;--accent-strong:#ffb74d;--success:#4caf50}
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef7;background:linear-gradient(180deg,#071020 0%,#0b1220 100%);-webkit-font-smoothing:antialiased}
+        .wrap{max-width:960px;margin:28px auto;padding:20px}
+        .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:28px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+        header{display:flex;gap:16px;align-items:center}
+        .logo{width:64px;height:64px;border-radius:12px;display:inline-block;background:linear-gradient(135deg,var(--accent),#1565c0);color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px}
+        h1{font-size:22px;margin:0;color:#fff}
+        .subtitle{margin:0;color:var(--muted);font-size:13px}
+        .meta{margin-top:14px;padding:12px;border-radius:10px;background:rgba(255,152,0,0.06);border-left:4px solid var(--accent);color:var(--accent-strong);font-weight:600}
+        h2{color:#fff;margin-top:22px;margin-bottom:10px;font-size:18px}
+        p{color:var(--muted);line-height:1.6;margin:0 0 12px}
+        ul{color:var(--muted);margin:0 0 16px 18px}
+        .section{margin-top:18px}
+        .box{background:rgba(255,255,255,0.02);padding:14px;border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
+        .third-party{display:flex;flex-wrap:wrap;gap:10px}
+        .badge{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+        .contact{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;margin-top:14px}
+        footer{margin-top:26px;color:rgba(255,255,255,0.4);font-size:13px;text-align:center}
+        @media (max-width:640px){.wrap{padding:12px}.card{padding:18px}h1{font-size:20px}}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="card">
+            <header>
+                <div class="logo">SY</div>
+                <div>
+                    <h1>Sweepy — Політика конфіденційності</h1>
+                    <div class="subtitle">Актуальна поведінка застосунку та деталі обробки даних</div>
+                </div>
+            </header>
+
+            <div class="meta">Оновлено: 12 січня 2026</div>
+
+            <section class="section">
+                <h2>Огляд</h2>
+                <p>Sweepy ("Застосунок") — інструмент для очищення галереї та керування фото/відео, який працює на вашому пристрої. У цій політиці пояснюється, які дозволи використовуються, які дані можуть оброблятися, які сторонні сервіси задіяні та які у вас є права.</p>
+            </section>
+
+            <section class="section">
+                <h2>Які дані ми обробляємо і навіщо</h2>
+                <div class="box">
+                    <p><strong>Застосунок зазвичай не завантажує ваші особисті медіафайли на сервер.</strong> Водночас можуть оброблятися такі типи даних (застосунком і/або сторонніми сервісами):</p>
+                    <ul>
+                        <li><strong>Доступ до медіа:</strong> для перегляду та керування фото/відео (перегляд, стиснення, видалення, приватний сейф). Медіафайли залишаються на вашому пристрої; їхній вміст не завантажується на сервери.</li>
+                        <li><strong>Налаштування та лічильники (локально):</strong> невеликі локальні дані (лічильники, параметри, кеш) зберігаються в Hive (локальна база даних).</li>
+                        <li><strong>Аналітика та звіти про збої:</strong> застосунок може збирати метрики використання та звіти про збої через Firebase Analytics або подібні інструменти. Це потрібно для стабільності й продуктивності та не містить вмісту ваших медіафайлів.</li>
+                        <li><strong>Рекламні ідентифікатори:</strong> для роботи реклами можуть використовуватися Advertising ID та контекстні сигнали; обробка виконується Google Mobile Ads.</li>
+                        <li><strong>Платежі / підписки:</strong> покупки обробляються через RevenueCat (purchases_flutter). Інформація на кшталт статусу підписки обробляється RevenueCat і не надсилається на наші власні сервери.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Дозволи та їх використання</h2>
+                <p>Застосунок може запитувати такі дозволи Android. Кожен дозвіл використовується лише тоді, коли активовано відповідну функцію:</p>
+                <ul>
+                    <li><strong>READ_MEDIA_IMAGES / READ_MEDIA_VIDEO:</strong> потрібні для показу й обробки медіа у вашій галереї.</li>
+                    <li><strong>WRITE_EXTERNAL_STORAGE (застарілі API):</strong> використовується для функцій, які потребують запису/видалення файлів (Android 9 і нижче).</li>
+                    <li><strong>INTERNET:</strong> потрібен для показу реклами, перевірок конфігурації/пакетів і сервісів покупок.</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Сторонні сервіси</h2>
+                <p>Деякі функції використовують SDK і сервіси третіх сторін, які регулюються їхніми власними політиками конфіденційності:</p>
+                <div class="third-party">
+                    <div class="badge">Google Mobile Ads (AdMob)</div>
+                    <div class="badge">RevenueCat (purchases_flutter)</div>
+                    <div class="badge">Firebase (Analytics / Crashlytics)</div>
+                    <div class="badge">Hive (локальні дані)</div>
+                    <div class="badge">photo_manager (доступ до галереї)</div>
+                </div>
+                <p style="margin-top:12px">Ці сервіси можуть збирати дані, зокрема персональну інформацію або рекламні ідентифікатори. Наприклад, рекламні провайдери можуть використовувати Advertising ID для таргетингу. Деталі дивіться в політиці конфіденційності відповідного провайдера.</p>
+            </section>
+
+            <section class="section">
+                <h2>Реклама та персоналізація</h2>
+                <p>Застосунок показує рекламу. Рекламні провайдери (наприклад, Google) можуть персоналізувати рекламу на основі ідентифікаторів пристрою, місця розташування (якщо дозволено) та використання застосунку. Керувати налаштуваннями реклами можна в параметрах реклами Android або в налаштуваннях вашого пристрою.</p>
+            </section>
+
+            <section class="section">
+                <h2>Покупки та підписки</h2>
+                <p>Покупки в застосунку обробляються через RevenueCat. Під час покупки платіжні дані обробляються безпосередньо магазином (Google Play / App Store); застосунок і RevenueCat не отримують повні платіжні реквізити. Статус покупки/підписки зберігається та застосовується RevenueCat.</p>
+            </section>
+
+            <section class="section">
+                <h2>Локальне сховище та кеш</h2>
+                <p>Застосунок зберігає невелику кількість даних на пристрої (Hive): налаштування, лічильники, невеликі кеші та стан застосунку. Зазвичай ці дані видаляються після видалення застосунку, але поведінка може відрізнятися залежно від пристрою/ОС.</p>
+            </section>
+
+            <section class="section">
+                <h2>Зберігання та видалення даних</h2>
+                <ul>
+                    <li>Застосунок не зберігає копії ваших медіа на сервері.</li>
+                    <li>Файли, які ви видаляєте в застосунку, видаляються з пристрою; поведінка кошика/відновлення в Android може відрізнятися.</li>
+                    <li>Щоб видалити локальні дані (налаштування, лічильники), видаліть застосунок; у деяких випадках потрібно вручну очистити дані (Налаштування пристрою → Застосунки).</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Ваші права</h2>
+                <p>Оскільки більшість даних зберігається локально, зазвичай немає потреби робити запит до центрального сервера. Для даних, які збирають рекламні/аналітичні провайдери, ви можете керувати налаштуваннями та запитами на видалення через їхні інструменти (наприклад, налаштування Google).</p>
+            </section>
+
+            <section class="section">
+                <h2>Конфіденційність дітей</h2>
+                <p>Застосунок свідомо не збирає персональні дані дітей молодше 13 років. Якщо ви батько/опікун і вважаєте, що дані могли бути зібрані, будь ласка, зв’яжіться з нами.</p>
+            </section>
+
+            <section class="section">
+                <h2>Безпека</h2>
+                <p>Застосунок застосовує розумні заходи безпеки для локальних даних (наприклад, шифрування для приватного сейфа). Коли задіяна передача даних мережею (перевірка покупок, реклама), застосовуються практики безпеки сторонніх провайдерів.</p>
+            </section>
+
+            <section class="section">
+                <h2>Контакти</h2>
+                <div class="contact">
+                    <p>Якщо у вас є запитання, занепокоєння або запит на видалення даних щодо цієї політики конфіденційності, зверніться до нас:</p>
+                    <p><strong>Email:</strong> bilge@lorabilisim.com</p>
+                    <p><strong>Компанія:</strong> LoraApps — Türkiye</p>
+                </div>
+            </section>
+
+            <footer>
+                <div>© LoraApps — Sweepy • Усі права захищено • Останнє оновлення: 12 січня 2026</div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

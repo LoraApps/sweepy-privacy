@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Kebijakan Privasi Sweepy - Aplikasi Pembersih Foto dan Video" />
+    <title>Sweepy - Kebijakan Privasi</title>
+    <style>
+        :root{--bg:#0f1724;--card:#0b1320;--muted:#9aa4b2;--accent:#ff9800;--accent-strong:#ffb74d;--success:#4caf50}
+        *{box-sizing:border-box}
+        html,body{height:100%}
+        body{margin:0;font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;color:#e6eef7;background:linear-gradient(180deg,#071020 0%,#0b1220 100%);-webkit-font-smoothing:antialiased}
+        .wrap{max-width:960px;margin:28px auto;padding:20px}
+        .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:28px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+        header{display:flex;gap:16px;align-items:center}
+        .logo{width:64px;height:64px;border-radius:12px;display:inline-block;background:linear-gradient(135deg,var(--accent),#1565c0);color:white;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px}
+        h1{font-size:22px;margin:0;color:#fff}
+        .subtitle{margin:0;color:var(--muted);font-size:13px}
+        .meta{margin-top:14px;padding:12px;border-radius:10px;background:rgba(255,152,0,0.06);border-left:4px solid var(--accent);color:var(--accent-strong);font-weight:600}
+        h2{color:#fff;margin-top:22px;margin-bottom:10px;font-size:18px}
+        p{color:var(--muted);line-height:1.6;margin:0 0 12px}
+        ul{color:var(--muted);margin:0 0 16px 18px}
+        .section{margin-top:18px}
+        .box{background:rgba(255,255,255,0.02);padding:14px;border-radius:8px;border:1px solid rgba(255,255,255,0.02)}
+        .third-party{display:flex;flex-wrap:wrap;gap:10px}
+        .badge{background:rgba(255,255,255,0.03);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px}
+        .contact{background:rgba(255,255,255,0.02);padding:12px;border-radius:8px;margin-top:14px}
+        footer{margin-top:26px;color:rgba(255,255,255,0.4);font-size:13px;text-align:center}
+        @media (max-width:640px){.wrap{padding:12px}.card{padding:18px}h1{font-size:20px}}
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="card">
+            <header>
+                <div class="logo">SY</div>
+                <div>
+                    <h1>Sweepy — Kebijakan Privasi</h1>
+                    <div class="subtitle">Perilaku aplikasi saat ini dan detail pemrosesan data</div>
+                </div>
+            </header>
+
+            <div class="meta">Diperbarui: 12 Januari 2026</div>
+
+            <section class="section">
+                <h2>Ringkasan</h2>
+                <p>Sweepy ("Aplikasi") adalah alat untuk membersihkan galeri dan mengelola foto/video yang berjalan di perangkat Anda. Kebijakan ini menjelaskan izin yang digunakan, data apa saja yang dapat diproses, layanan pihak ketiga yang terlibat, serta hak Anda.</p>
+            </section>
+
+            <section class="section">
+                <h2>Data yang Diproses dan Alasannya</h2>
+                <div class="box">
+                    <p><strong>Secara umum, Sweepy tidak mengunggah konten media pribadi Anda ke server.</strong> Namun, beberapa jenis data berikut dapat diproses oleh aplikasi dan/atau layanan pihak ketiga:</p>
+                    <ul>
+                        <li><strong>Akses media:</strong> Untuk menampilkan dan mengelola foto/video Anda (melihat, kompresi, penghapusan, Vault pribadi). File media tetap di perangkat; kami tidak mengunggah isi file ke server.</li>
+                        <li><strong>Pengaturan & penghitung (lokal):</strong> Data kecil seperti preferensi, penghitung harian, dan cache disimpan secara lokal di Hive (database lokal).</li>
+                        <li><strong>Analitik & laporan crash:</strong> Aplikasi dapat mengumpulkan metrik penggunaan dan laporan crash melalui Firebase Analytics atau alat serupa. Ini untuk stabilitas dan performa, dan tidak mencakup isi media pribadi Anda.</li>
+                        <li><strong>Pengidentifikasi iklan:</strong> Agar iklan berfungsi, Advertising ID perangkat dan sinyal kontekstual dapat digunakan; pemrosesan dilakukan oleh Google Mobile Ads.</li>
+                        <li><strong>Pembayaran / langganan:</strong> Pembelian diproses melalui RevenueCat (purchases_flutter). Informasi seperti status langganan diproses oleh RevenueCat; tidak dikirim ke server kami sendiri.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Izin dan Penggunaannya</h2>
+                <p>Aplikasi dapat meminta izin Android berikut. Setiap izin hanya digunakan saat fitur terkait diaktifkan:</p>
+                <ul>
+                    <li><strong>READ_MEDIA_IMAGES / READ_MEDIA_VIDEO:</strong> Diperlukan untuk menampilkan dan memproses media di galeri.</li>
+                    <li><strong>WRITE_EXTERNAL_STORAGE (API lama):</strong> Digunakan untuk fitur yang membutuhkan menulis/menghapus file (Android 9 ke bawah).</li>
+                    <li><strong>INTERNET:</strong> Diperlukan untuk penayangan iklan, pemeriksaan konfigurasi/paket, dan layanan pembelian.</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Layanan Pihak Ketiga</h2>
+                <p>Beberapa fitur menggunakan SDK dan layanan pihak ketiga yang diatur oleh kebijakan privasi masing-masing:</p>
+                <div class="third-party">
+                    <div class="badge">Google Mobile Ads (AdMob)</div>
+                    <div class="badge">RevenueCat (purchases_flutter)</div>
+                    <div class="badge">Firebase (Analytics / Crashlytics)</div>
+                    <div class="badge">Hive (data lokal)</div>
+                    <div class="badge">photo_manager (akses galeri)</div>
+                </div>
+                <p style="margin-top:12px">Layanan ini dapat mengumpulkan data seperti informasi pribadi atau pengidentifikasi iklan. Misalnya, penyedia iklan dapat menggunakan Advertising ID untuk penargetan. Silakan merujuk ke kebijakan privasi penyedia untuk detail.</p>
+            </section>
+
+            <section class="section">
+                <h2>Iklan dan Personalisasi</h2>
+                <p>Aplikasi menampilkan iklan. Penyedia iklan (mis. Google) dapat mempersonalisasi iklan berdasarkan pengidentifikasi perangkat, lokasi (jika diizinkan), dan penggunaan aplikasi. Anda dapat mengatur preferensi iklan melalui pengaturan iklan Android atau pengaturan perangkat.</p>
+            </section>
+
+            <section class="section">
+                <h2>Pembelian dan Langganan</h2>
+                <p>Pembelian dalam aplikasi diproses melalui RevenueCat. Saat pembelian, informasi pembayaran ditangani langsung oleh store (Google Play / App Store); Aplikasi dan RevenueCat tidak menerima detail pembayaran lengkap. Status pembelian/langganan Anda disimpan dan diberlakukan oleh RevenueCat.</p>
+            </section>
+
+            <section class="section">
+                <h2>Penyimpanan Lokal dan Cache</h2>
+                <p>Aplikasi menyimpan sejumlah kecil data di perangkat Anda (Hive): preferensi, penghitung harian, cache kecil, dan status aplikasi. Data ini biasanya terhapus saat Anda menghapus aplikasi, namun perilaku dapat berbeda tergantung perangkat/OS.</p>
+            </section>
+
+            <section class="section">
+                <h2>Retensi dan Penghapusan Data</h2>
+                <ul>
+                    <li>Aplikasi tidak menyimpan salinan media Anda di server.</li>
+                    <li>File yang Anda hapus di aplikasi akan dihapus dari perangkat; perilaku "trash"/"recycle" Android dapat berbeda.</li>
+                    <li>Untuk menghapus data lokal (pengaturan, penghitung), hapus aplikasi; dalam beberapa kasus Anda perlu menghapus data aplikasi secara manual (Pengaturan perangkat → Aplikasi).</li>
+                </ul>
+            </section>
+
+            <section class="section">
+                <h2>Hak Anda</h2>
+                <p>Karena sebagian besar data disimpan secara lokal, umumnya tidak ada permintaan ke server pusat yang diperlukan. Untuk data yang dikumpulkan oleh penyedia iklan/analitik, Anda dapat mengelola preferensi dan permintaan penghapusan melalui kontrol pihak ketiga (mis. pengaturan Google).</p>
+            </section>
+
+            <section class="section">
+                <h2>Privasi Anak</h2>
+                <p>Aplikasi tidak dengan sengaja mengumpulkan data pribadi dari anak di bawah 13 tahun. Jika Anda orang tua/wali dan yakin data telah dikumpulkan, silakan hubungi kami.</p>
+            </section>
+
+            <section class="section">
+                <h2>Keamanan</h2>
+                <p>Aplikasi menerapkan langkah keamanan yang wajar untuk data lokal (mis. enkripsi untuk Vault pribadi di aplikasi). Saat ada transmisi jaringan (verifikasi pembelian, iklan), praktik keamanan penyedia pihak ketiga berlaku.</p>
+            </section>
+
+            <section class="section">
+                <h2>Kontak</h2>
+                <div class="contact">
+                    <p>Jika Anda memiliki pertanyaan, kekhawatiran, atau permintaan penghapusan data terkait kebijakan privasi ini, silakan hubungi:</p>
+                    <p><strong>Email:</strong> bilge@lorabilisim.com</p>
+                    <p><strong>Perusahaan:</strong> LoraApps — Türkiye</p>
+                </div>
+            </section>
+
+            <footer>
+                <div>© LoraApps — Sweepy • Hak cipta dilindungi • Pembaruan terakhir: 12 Januari 2026</div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

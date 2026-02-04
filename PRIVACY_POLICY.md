@@ -1,12 +1,12 @@
-# Privacy Policy for SweepIt
+# Privacy Policy for Sweepy
 
 **Last Updated: December 7, 2025**
 
 ## Overview
-SweepIt ("the App") is a photo gallery management application developed by LoraApps. This Privacy Policy explains how we handle your information.
+Sweepy ("the App") is a photo gallery management application developed by LoraApps. This Privacy Policy explains how we handle your information.
 
 ## Information We Collect
-**None.** SweepIt does not collect, store, or transmit any personal data to external servers.
+**None.** Sweepy does not collect, store, or transmit any personal data to external servers.
 
 ## Permissions
 The App requires the following permissions to function:
@@ -33,7 +33,7 @@ The App requires the following permissions to function:
 - **No Third-Party Services**: The App does not integrate with any third-party services that collect data
 
 ## Data Deletion
-When you delete photos using SweepIt:
+When you delete photos using Sweepy:
 - Files are permanently removed from your device's storage
 - Deletion is immediate and irreversible
 - No copies are retained by the App
@@ -44,7 +44,7 @@ When you uninstall the App:
 - Your photos (not deleted through the app) remain on your device
 
 ## Children's Privacy
-SweepIt does not knowingly collect information from anyone, including children under 13 years of age.
+Sweepy does not knowingly collect information from anyone, including children under 13 years of age.
 
 ## Changes to This Policy
 We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated revision date.
